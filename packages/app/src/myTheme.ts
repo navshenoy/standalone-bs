@@ -1,11 +1,9 @@
-import { createThemeOptions, lightTheme, createTheme } from '@backstage/theme';
+import { lightTheme, createTheme } from '@backstage/theme';
 import { pageTheme } from './pageTheme';
 
 
-export const myTheme = createThemeOptions({
+export const myTheme = createTheme({
     palette: lightTheme.palette,
     defaultPageTheme: 'home',
     pageTheme,
   });
-
-  const newTheme = createTheme(myTheme);

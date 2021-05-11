@@ -21,14 +21,8 @@ import { UserSettingsPage } from '@backstage/plugin-user-settings';
 import { apis } from './apis';
 import { entityPage } from './components/catalog/EntityPage';
 import { Root } from './components/Root';
-//import { myTheme } from './myTheme';
-import { darkTheme, lightTheme, createTheme } from '@backstage/theme';
-
-const myTheme = createTheme({
-  palette: lightTheme.palette,
-  fontFamily: 'Comic Sans MS',
-  defaultPageTheme: 'home',
-});
+import { myTheme } from './myTheme';
+import { darkTheme, lightTheme } from '@backstage/theme';
 
 const app = createApp({
   apis,
